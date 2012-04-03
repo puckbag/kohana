@@ -57,11 +57,11 @@ EOF
 #----------------------------------------------------------------------------------------#
 
 
-PROJECT=$1
+PROJECT="$1"
 CWD=`cwd`
 
-mkdir $PROJECT
-cd $PROJECT
+mkdir "$PROJECT"
+cd "$PROJECT"
 
 git init
 
@@ -93,7 +93,7 @@ git add .
 git commit -m 'Added initial directory structure'
 
 
-cd $CWD
+cd "$CWD"
 
 
 
