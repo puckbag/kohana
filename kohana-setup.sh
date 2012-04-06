@@ -11,9 +11,9 @@ cd "$PROJECT"
 git init
 
 git submodule add git://github.com/puckbag/kohana-core.git system
-git submodule add git://github.com/kohana/database.git modules/auth
+git submodule add git://github.com/kohana/auth.git modules/auth
 git submodule add git://github.com/kohana/database.git modules/database
-git submodule add git://github.com/kohana/database.git modules/orm
+git submodule add git://github.com/kohana/orm.git modules/orm
 git submodule init
 git submodule foreach 'git checkout 3.2/master && git pull origin 3.2/master'
 cd system && git checkout 3.2/puckbag && git pull origin 3.2/puckbag && cd ..
